@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    position: absolute;
+    z-index: 100;
+    font-size: 88px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    top: 100px;
+    left: 100px;
+}
+
+.search-container{
+    position: absolute;
+    z-index: 100;
+    top: 230px;
+    left: 100px;
+    width: 400px;
+    height: 60px;
+    background-color: #545f53;
+    border-radius: 30px;
+    display:flex;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.search-container .search{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input{
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.search-container input:focus{
+    outline:none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search i{
+    color: white;
+    font-size: 20px;
+}
+
+.stores-list-container{
+    width: 350px;
+    bottom: 20px;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    left: 100px;
+    top: 320px;
+    border-radius: 30px;
+    overflow-y: scroll;
+    
+}
+
+.store-contianer{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    border-bottom: 1px solid #979797
+    
+
+}
+
+.store-phone-number{
+    color:#b5adad;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.store-address{
+    font-size: 21px;
+    color: #514c4c;
+    margin-top: 30px;
+}
+
+.store-address span{
+    display: block;
+}
+
+.store-number{
+    width: 30px;
+    height: 30px;
+    background-color: #454e53;
+    border-radius: 50%;
+    color: #b5adad;
+    font-size: 12px;
+    display: block;
+}
+
+.store-info-container{
+    flex-grow: 1;
+}
+
+.store-number-comtainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+
+  .store-contianer:hover{
+      background-color: #ceccc7;
+      border-radius: 30px;
+  }
+
+
+  .scrollable-content {
+    overflow-x:hidden;
+    overflow-y:scroll; 
+  }
+
+  .store-info-window{
+    min-width: 300px;
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .store-info-name{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0.0.0.87);
+  }
+
+  .store-info-status{
+    margin-top: 6px;
+    border-bottom: 1px solid #00000029;
+    padding-bottom: 6px;
+  }
+
+  .store-info-address{
+    margin-top: 6px;
+  }
+
+
+  .store-info-phone{
+    margin-top: 8px;
+  }
+
+  .search i{
+      cursor: pointer;
+  }
